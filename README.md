@@ -6,7 +6,7 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ## Network Topology
 
-(Topology.png)
+![Network Topology](Topology.png)
 
 ---
 
