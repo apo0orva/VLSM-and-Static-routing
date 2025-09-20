@@ -37,15 +37,15 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ### HQ Routing table
 
-![Static route HQ](Static%20route%20BR1.png)
+![Static route HQ](Static%20route%20HQ.png)
 
 ### BR1 Routing table
 
-![Static route BR1]()
+![Static route BR1][Static%20route%20BR1.png]
 
 ### BR2 Routing table
 
-![Static route BR2]()
+![Static route BR2][Static%20route%20BR2.png]
 
 
 ---
@@ -55,3 +55,6 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 - **Routing Table** separates known and unknown networks for each router, helping identify where static or dynamic routes must be added.  
 - `/30` subnets are typically used for point-to-point links.  
 
+
+
+[def]: Stat
