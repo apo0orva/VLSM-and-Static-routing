@@ -4,6 +4,12 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ---
 
+## Network Topology
+
+(Topology.png)
+
+---
+
 ## VLSM Subnet Table
 
 | LAN | Subnet Mask     | Network Address | Usable Range                  | Broadcast Address |
