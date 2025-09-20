@@ -41,11 +41,11 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ### BR1 Routing table
 
-![Static route BR1][Static%20route%20BR1.png]
+![Static route BR1](Static%20route%20BR1.png)
 
 ### BR2 Routing table
 
-![Static route BR2][Static%20route%20BR2.png]
+![Static route BR2](Static%20route%20BR2.png)
 
 
 ---
