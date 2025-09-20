@@ -35,6 +35,8 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 | BR2             | 172.16.248.0; 172.16.252.0; 172.16.254.4; 172.16.254.8         | 172.16.128.0; 172.16.192.0; 172.16.224.0; 172.16.240.0; 172.16.254.0 |
 
 
+### HQ Routing table
+
 ---
 
 ## Notes
