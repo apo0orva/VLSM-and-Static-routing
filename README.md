@@ -1,11 +1,10 @@
+# VLSM Calculations & Routing Table
 
-# VLSM Calculations
-
-This document outlines the subnetting using Variable Length Subnet Masking (VLSM) for the given network.
+This document outlines the subnetting using Variable Length Subnet Masking (VLSM) and the corresponding routing information.
 
 ---
 
-## Subnet Table
+## VLSM Subnet Table
 
 | LAN | Subnet Mask     | Network Address | Usable Range                  | Broadcast Address |
 |-----|-----------------|-----------------|--------------------------------|------------------|
@@ -21,7 +20,24 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ---
 
+## Routing Table
+
+| Router        | Known Networks                                   | Unknown Networks                                   |
+|---------------|--------------------------------------------------|---------------------------------------------------|
+| 172.16.128.0  | 172.16.192.0; 172.16.254.0; 172.16.254.4         | 172.16.224.0; 172.16.240.0; 172.16.248.0; 172.16.252.0; 172.16.254.8 |
+| 172.16.192.0  | 172.16.128.0; 172.16.254.0; 172.16.254.4         | 172.16.224.0; 172.16.240.0; 172.16.248.0; 172.16.252.0; 172.16.254.8 |
+| 172.16.224.0  | 172.16.240.0; 172.16.254.0; 172.16.254.8         | 172.16.128.0; 172.16.192.0; 172.16.248.0; 172.16.252.0; 172.16.254.4 |
+| 172.16.240.0  | 172.16.224.0; 172.16.254.0; 172.16.254.8         | 172.16.128.0; 172.16.192.0; 172.16.248.0; 172.16.252.0; 172.16.254.4 |
+| 172.16.248.0  | 172.16.252.0; 172.16.254.4; 172.16.254.8         | 172.16.128.0; 172.16.192.0; 172.16.224.0; 172.16.240.0; 172.16.254.0 |
+| 172.16.252.0  | 172.16.248.0; 172.16.254.4; 172.16.254.8         | 172.16.128.0; 172.16.192.0; 172.16.224.0; 172.16.240.0; 172.16.254.0 |
+| 172.16.254.0  | 172.16.128.0; 172.16.192.0; 172.16.224.0; 172.16.240.0; 172.16.254.4; 172.16.254.8 | 172.16.248.0; 172.16.252.0 |
+| 172.16.254.4  | 172.16.128.0; 172.16.192.0; 172.16.248.0; 172.16.252.0; 172.16.254.0; 172.16.254.8 | 172.16.224.0; 172.16.240.0 |
+| 172.16.254.8  | 172.16.224.0; 172.16.240.0; 172.16.248.0; 172.16.252.0; 172.16.254.0; 172.16.254.4 | 172.16.128.0; 172.16.192.0 |
+
+---
+
 ## Notes
-- Subnetting is performed using VLSM to allocate addresses efficiently based on network requirements.  
-- The last three LANs use `/30` subnets for point-to-point connections.
+- **VLSM** allows efficient use of IP address space.  
+- **Routing Table** separates known and unknown networks for each router, helping identify where static or dynamic routes must be added.  
+- `/30` subnets are typically used for point-to-point links.  
 
