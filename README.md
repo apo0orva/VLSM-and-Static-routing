@@ -37,6 +37,17 @@ This document outlines the subnetting using Variable Length Subnet Masking (VLSM
 
 ### HQ Routing table
 
+![Static route HQ](Static route BR1.png)
+
+### BR1 Routing table
+
+![Static route BR1]()
+
+### BR2 Routing table
+
+![Static route BR2]()
+
+
 ---
 
 ## Notes
